@@ -64,6 +64,8 @@ sudo python3 whisper.py
 
 ### Available Modes
 
+<img width="1366" height="768" alt="Screenshot_2026-01-20_09_06_43" src="https://github.com/user-attachments/assets/8273a0b1-8902-4f5d-8508-b673e9af2adb" />
+
 #### 1. Real Scan for Fast Pair Devices
 Scans for devices using Google's Fast Pair protocol. Duration options:
 - Quick scan (10 seconds)
