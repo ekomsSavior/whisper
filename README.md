@@ -1,5 +1,11 @@
 # WHISPER - Fast Pair Vulnerability Research Tool
 
+<p align="center">
+
+  <img src="https://img.shields.io/badge/ek0ms%20savi0r-yellow.svg" alt="ek0ms_savi0r">
+ 
+</p>
+
 ## SECURITY DISCLAIMER AND LEGAL WARNING
 
 **THIS SOFTWARE IS FOR AUTHORIZED SECURITY RESEARCH AND ETHICAL TESTING ONLY**
