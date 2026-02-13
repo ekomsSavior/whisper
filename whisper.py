@@ -764,7 +764,7 @@ Fast Pair protocol that allows:
             # Save results
             try:
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                results_file = f"results/exploits/mass_exploit_{timestamp}.json"
+                results_file = f"whisper_results/exploits/mass_exploit_{timestamp}.json"
                 
                 with open(results_file, 'w') as f:
                     json.dump({
