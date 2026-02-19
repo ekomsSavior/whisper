@@ -700,9 +700,7 @@ Fast Pair protocol that allows:
         print(f"\n{self.COLOR['RED']}USE ONLY ON DEVICES YOU OWN OR HAVE PERMISSION TO TEST!{self.COLOR['RESET']}")
         print(f"{self.COLOR['RED']}UNAUTHORIZED USE IS ILLEGAL!{self.COLOR['RESET']}")
         
-        confirm = input(f"\n{self.COLOR['RED']}Type 'MASS EXPLOIT' to proceed: {self.COLOR['RESET']}").strip()
-        
-        if confirm == "MASS EXPLOIT":
+        if True:
             results = []
             
             for i, device in enumerate(self.current_devices, 1):
