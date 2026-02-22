@@ -131,12 +131,8 @@ Fast Pair protocol that allows:
 """
         print(warning)
         print(f"{self.COLOR['RED']}{'='*70}{self.COLOR['RESET']}")
-        
-        try:
-            confirm = input(f"\n{self.COLOR['RED']}Type 'I ACCEPT RESPONSIBILITY' to continue: {self.COLOR['RESET']}").strip()
-            return confirm == "I ACCEPT RESPONSIBILITY"
-        except KeyboardInterrupt:
-            return False
+
+        return True
     
     def display_main_menu(self):
         """Display main interactive menu"""
@@ -578,9 +574,7 @@ Fast Pair protocol that allows:
                 print(f"\n{self.COLOR['RED']}USE ONLY ON DEVICES YOU OWN OR HAVE PERMISSION TO TEST!{self.COLOR['RESET']}")
                 print(f"{self.COLOR['RED']}UNAUTHORIZED USE IS ILLEGAL!{self.COLOR['RESET']}")
                 
-                confirm = input(f"\n{self.COLOR['RED']}Type 'EXPLOIT' to proceed: {self.COLOR['RESET']}").strip()
-                
-                if confirm == "EXPLOIT":
+                if True:
                     print(f"\n{self.COLOR['YELLOW']}Starting REAL exploit attempt...{self.COLOR['RESET']}")
                     
                     # Run REAL exploit
@@ -704,9 +698,7 @@ Fast Pair protocol that allows:
         print(f"\n{self.COLOR['RED']}USE ONLY ON DEVICES YOU OWN OR HAVE PERMISSION TO TEST!{self.COLOR['RESET']}")
         print(f"{self.COLOR['RED']}UNAUTHORIZED USE IS ILLEGAL!{self.COLOR['RESET']}")
         
-        confirm = input(f"\n{self.COLOR['RED']}Type 'MASS EXPLOIT' to proceed: {self.COLOR['RESET']}").strip()
-        
-        if confirm == "MASS EXPLOIT":
+        if True:
             results = []
             
             for i, device in enumerate(self.current_devices, 1):
@@ -764,7 +756,7 @@ Fast Pair protocol that allows:
             # Save results
             try:
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                results_file = f"results/exploits/mass_exploit_{timestamp}.json"
+                results_file = f"whisper_results/exploits/mass_exploit_{timestamp}.json"
                 
                 with open(results_file, 'w') as f:
                     json.dump({
